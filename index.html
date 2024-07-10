@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Encriptador/Desencriptador</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="header">
+        <img src="assest/Logo.png" alt="Logo" class="Logo">
+    </div>
+    <div class="container">
+        <div class="input-section">
+            <h1>Ingrese el texto aquí</h1>
+            <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+            <div id="warningMessage" class="warning-message">
+                <img src="assest/sd.png" alt="warning">
+                ¡Solo letras minúsculas y sin acento!
+            </div>
+            <div class="buttons">
+                <button onclick="encryptText()">Encriptar</button>
+                <button onclick="decryptText()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <div class="output-content">
+                <img src="assest/muneco.png" alt="muneco" class="muneco" id="muneco">
+                <p id="noMessage">Ningún mensaje fue encontrado</p>
+                <textarea id="outputText" readonly placeholder="Resultado..."></textarea>
+                <button class="copy-button" onclick="copyText()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
